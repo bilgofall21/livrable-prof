@@ -1,0 +1,196 @@
+body{
+    background-color: #F6F6F6;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/***** menu nav 1  *****/
+.validation_paniernav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 20px;
+    /* width: 80%;
+    margin-left: 100px; */
+    border-bottom: 3px solid white;
+}
+.validation_paniernav .validation_navpanier1{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.validation_paniernav .validation_navpanier1:hover{
+    background-color: #C7A065;
+    color: #F6F6F6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#validation_navpanier1{
+    background-color: #C7A065;
+}
+#validation_navpanier1 h6{
+    color: white;
+}
+.validation_paniernav .validation_navpanier1:focus, .validation_paniernav .validation_navpanier1:active{
+    background-color: #C7A065;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.validation_paniernav .validation_navpanier1 h6{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.336);
+    font-weight: bolder; 
+}
+.validation_paniernav .validation_navpanier1 h6:hover{
+    color: #ffff;
+}
+/***** fin menu nav 1 *****/
+
+/***** menu nav 2 *****/
+.validation_head{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin-bottom: 25px;
+    /* width: 80%;
+    margin-left: 100px; */
+}
+.validation_head-item p{
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+}
+.validation_head-item h4{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 10px;
+}
+/***** fin menu nav 2 *****/
+
+/***** css du contenu *****/
+.validation_content_hr{
+    width: 15% !important;
+    margin-left: 0;
+
+}
+.validation_content{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    /* width: 80%;
+    margin-left: 100px; */
+}
+.validation_content hr{
+    width: 90%;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+.validation_content h4{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.validation_content h4, .validation_content_hr{
+    margin-left: 100px !important;
+}
+.validation_content_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+}
+#validation_content_item{
+    color: #C87065;
+}
+#validation_content_itm{
+    background-color: #F6F6F6;
+}
+.validation_content summary {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #F6F6F6;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.validation_content details {
+    margin: 20px;
+    border: 1px solid #F6F6F6;
+    border-radius: 5px;
+  }
+.validation_content_details{
+    margin-left: 80px
+}
+.validation_content details {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+}
+.validation_content summary {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.validation_content .arrow {
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+    margin-left: 60px;
+}
+
+.validation_content details[open] .arrow {
+    transform: rotate(180deg);
+}
+
+.validation_content details[open] {
+    background-color: #ffff;
+}
+/***** fin css du contenu *****/
+
+/* retouche  */
+.validation-items{
+
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+@media screen and (width <= 900px){
+    .validation_paniernav{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .validation_head{
+        width: 80%;
+    }
+    .validation_content{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .validation_content_item{
+        width: 80%;
+    }
+    .validation_content hr{
+        width: 80%;
+    }
+    .validation_content_details{
+        margin-left: -40px;
+    }
+    .validation_content h4, .validation_content_hr{
+        margin-left: 70px !important;
+    }
+    #Validation_payment, #validation_content_hr{
+        margin-left: -15px !important;
+    }
+}
